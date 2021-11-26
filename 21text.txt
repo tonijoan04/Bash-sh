@@ -1,0 +1,13 @@
+#exercici guiat 1
+#solució 1:
+#el programa lleegix per petició de read
+
+echo "Insereix el primer nombre"
+read nombre1
+echo "Insereix el sogon nombre"
+read nombre2
+echo "Insereix el tercer nombre"
+read nombre3
+let resultat=$nombre1+$nombre2+$nombre3
+let resultat=$resultat/3
+echo "el resultat de la mitja de $nombre1 , $nombre2 i $nombre3 es $resultat"

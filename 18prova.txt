@@ -1,0 +1,8 @@
+#!/bin/sh
+# Toni Joan Martí Sansó
+echo What is your name?
+read MY NAME
+echo "Hello $MY_NAME - hope you're well"
+echo "I will create you a file called ${MY_NAME} file"
+touch ${MY_NAME}_file
+

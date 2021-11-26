@@ -1,0 +1,6 @@
+#!/bin/bash
+numero=$(($RANDOM%10))
+echo $numero
+echo "Digues el teu nom"
+read nom
+echo "Hola $nom"

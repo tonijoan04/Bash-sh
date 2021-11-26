@@ -1,0 +1,13 @@
+echo "Insereix una  quantitat d'hores"
+read num1
+echo "Insereix una quantitat de minuts"
+read num2
+echo "Insereix una quantitat de segons"
+read num3
+
+let res1=$num1*3600
+echo "$num1 hores son $res1 segons"
+let res2=$num2*60
+echo "$num2 minuts son $res2 segons"
+let res=$res1+$res2+$num3
+echo "En total son $res segons"

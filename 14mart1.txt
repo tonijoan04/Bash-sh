@@ -1,0 +1,24 @@
+#condicional, exercici A
+
+echo "Digues un numero"
+read numero1
+echo "Digues un altre numero"
+read numero2
+
+#condicional 1
+if test $numero1 -gt $numero2
+    then
+    echo "El primer numero es major que el segon"
+fi
+
+#condicional 2
+if test $numero2 -gt $numero1
+    then
+    echo "El segon numero es major que el primer"
+fi
+
+#condicional 3
+if test $numero1 -eq $numero2
+    then
+    echo "Els dos numeros son iguals"
+fi

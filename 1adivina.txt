@@ -1,0 +1,27 @@
+#!/bin/bash
+numero=$(($RANDOM%10))
+respuesta=11
+echo "Digues el teu nom"
+read nom
+cont=0
+while [ $numero -ne $respuesta ]
+do
+ let cont=cont+1
+ if [ $cont -gt 3 ]
+ then
+ echo Intentos agotados
+ exit
+ else
+  read -p "¿Cual es el numero? 1-10: " respuesta
+  echo Numero de intentos $cont de 3.
+  if [ $numero -lt $respuesta ]
+  then
+   echo El numero es menor a $respuesta
+  elif [ $numero -gt $respuesta ]
+  then
+   echo EL numero es mayor a $respuesta
+  fi 
+ fi
+done
+
+echo Correcto $nom, el numero es $numero.

@@ -1,0 +1,26 @@
+nSecret=$(($RANDOM%11))
+echo "Escriu el teu nom"
+read nom
+echo "Hola $nom"
+
+echo "El numero secret es $nSecret"
+echo "Quin es el numero secret?"
+
+read numeroUsuari
+
+if test $nSecret -eq $numeroUsuari
+    then
+    echo    "Correcte!!! $nom ets un crack!!!"
+fi
+
+
+if test $nSecret -gt $numeroUsuari
+    then
+    echo    "Incorrecte!!! $nom el numero es mes gros"
+fi
+
+
+if test $nSecret -ge $numeroUsuari
+    then
+    echo    "Incorrecte!!! $nom el numero es mes petit!!!"
+fi

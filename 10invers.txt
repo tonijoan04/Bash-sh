@@ -1,0 +1,7 @@
+echo "Insereix una  quantitat de segons"
+read num1
+
+let res1=$num1/3600
+echo "Això son $res1 hores"
+let res2=$num1/60
+echo "Això son $res2 minuts"

@@ -1,0 +1,13 @@
+echo "Insereix el primer nombre"
+read num1
+echo "Insereix el sogon nombre"
+read num2
+echo "Insereix el tercer nombre"
+read num3
+
+let res=$num1+$num2+$num3
+echo "La suma de les tres variables es $res"
+let res=$num1-$num2-$num3
+echo "La resta de les tres variables es $res"
+let res=$num1*$num2*$num3
+echo "La multiplicació de les trs variables es $res"

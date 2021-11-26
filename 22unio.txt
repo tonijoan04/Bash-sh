@@ -1,0 +1,142 @@
+#!/bin/bash
+echo "Digues el teu nom"
+read nom
+echo "Hola $nom"
+
+
+echo ""
+
+
+#condicional, exercici A
+
+echo "Ara dire quin dels dos numeros que me donis es el mes gran o el mes petit"
+echo "Digues un numero"
+read numero1
+echo "Digues un altre numero"
+read numero2
+
+#condicional 1
+if test $numero1 -gt $numero2
+    then
+    echo "El primer numero es major que el segon"
+fi
+
+#condicional 2
+if test $numero2 -gt $numero1
+    then
+    echo "El segon numero es major que el primer"
+fi
+
+#condicional 3
+if test $numero1 -eq $numero2
+    then
+    echo "Els dos numeros son iguals"
+fi
+
+
+echo ""
+
+
+#!/bin/bash
+numero=$(($RANDOM%10))
+echo "Ara has d'endivinar un numero de l'1 al 10"
+respuesta=11
+cont=0
+while [ $numero -ne $respuesta ]
+do
+ let cont=cont+1
+ if [ $cont -gt 3 ]
+ then
+ echo Intentos agotados
+ exit
+ else
+  read -p "¿Cual es el numero? 1-10: " respuesta
+  echo Numero de intentos $cont de 3.
+  if [ $numero -lt $respuesta ]
+  then
+   echo El numero es menor a $respuesta
+  elif [ $numero -gt $respuesta ]
+  then
+   echo EL numero es mayor a $respuesta
+  fi 
+ fi
+done
+
+echo Correcto $nom, el numero es $numero.
+
+
+echo ""
+
+
+echo "Ara fare la suma, la resta i la multiplicació dels numeros que em diguis"
+echo "Insereix el primer nombre"
+read num1
+echo "Insereix el sogon nombre"
+read num2
+echo "Insereix el tercer nombre"
+read num3
+
+let res=$num1+$num2+$num3
+echo "La suma de les tres variables es $res"
+let res=$num1-$num2-$num3
+echo "La resta de les tres variables es $res"
+let res=$num1*$num2*$num3
+echo "La multiplicació de les trs variables es $res"
+
+
+echo ""
+
+
+echo "Ara ho pasare tot a segons"
+echo "Insereix una  quantitat d'hores"
+read num1
+echo "Insereix una quantitat de minuts"
+read num2
+echo "Insereix una quantitat de segons"
+read num3
+
+let res1=$num1*3600
+echo "$num1 hores son $res1 segons"
+let res2=$num2*60
+echo "$num2 minuts son $res2 segons"
+let res=$res1+$res2+$num3
+echo "En total son $res segons"
+
+
+echo ""
+
+
+echo "Ara pasare una quantitat de segons a hores i minuts"
+echo "Insereix una  quantitat de segons"
+read num1
+
+let res1=$num1/3600
+echo "Això son $res1 hores"
+let res2=$num1/60
+echo "Això son $res2 minuts"
+
+
+echo ""
+
+
+
+#exercici guiat 1
+#solució 1:
+#el programa lleegix per petició de read
+
+echo "Ara fare la mitja dels nombres que me donis"
+echo "Insereix el primer nombre"
+read nombre1
+echo "Insereix el sogon nombre"
+read nombre2
+echo "Insereix el tercer nombre"
+read nombre3
+let resultat=$nombre1+$nombre2+$nombre3
+let resultat=$resultat/3
+echo "el resultat de la mitja de $nombre1 , $nombre2 i $nombre3 es $resultat"
+
+
+echo ""
+
+
+echo "Moltes gracies $nom per participar"
