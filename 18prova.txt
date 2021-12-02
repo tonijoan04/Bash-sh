@@ -1,3 +1,5 @@
+#Toni Joan Martí Sansó
+
 #!/bin/sh
 # Toni Joan Martí Sansó
 echo What is your name?

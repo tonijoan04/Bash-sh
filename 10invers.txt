@@ -1,3 +1,5 @@
+#Toni Joan Martí Sansó
+
 echo "Insereix una  quantitat de segons"
 read num1
 

@@ -1,3 +1,5 @@
+#Toni Joan Martí Sansó
+
 #condicional, exercici A
 
 echo "Digues un numero"

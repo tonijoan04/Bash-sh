@@ -1,3 +1,5 @@
+#Toni Joan Martí Sansó
+
 #exercici guiat 1
 #solució 1:
 #el programa lleegix per petició de read

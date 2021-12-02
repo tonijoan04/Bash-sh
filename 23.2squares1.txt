@@ -1,0 +1,20 @@
+#Toni Joan Martí Sansó
+
+#squares1
+
+num=("1" "2" "3" "4" "5" "6" "7" "8" "9")
+
+echo "Diguem un num"
+read num
+
+for i in (( i=0; i<$num; i++))
+do
+    printf "$i"
+
+    for j in $i
+    do
+        printf $j
+
+    done
+    echo ""
+done

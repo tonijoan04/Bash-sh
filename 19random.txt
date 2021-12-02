@@ -1,3 +1,5 @@
+#Toni Joan Martí Sansó
+
 #	Crear un script que intente adiviar un numro que tenemos en mente. El programa debera ir
 #preguntando al usuario si el numero mostrado es mayor o menor.
  

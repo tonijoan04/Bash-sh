@@ -1,3 +1,5 @@
+#Toni Joan Martí Sansó
+
 #!/bin/bash
 numero=$(($RANDOM%10))
 respuesta=11
